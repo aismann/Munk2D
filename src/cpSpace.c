@@ -88,7 +88,7 @@ cpSpaceInit(cpSpace *space)
 #ifndef NDEBUG
 	static cpBool done = cpFalse;
 	if(!done){
-		printf("Initializing cpSpace - Chipmunk v%s (Debug Enabled)\n", cpVersionString);
+		printf("Initializing cpSpace - Chipmunk (Munk2D) v%s (Debug Enabled)\n", cpVersionString);
 		printf("Compile with -DNDEBUG defined to disable debug mode and runtime assertion checks\n");
 		done = cpTrue;
 	}
