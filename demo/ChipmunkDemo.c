@@ -49,6 +49,7 @@
 static ChipmunkDemo demos[32];
 static int demo_count;
 static int demo_index;
+static bool drawInfo = false;
 
 static cpBool paused = cpFalse;
 static cpBool step = cpFalse;
@@ -206,6 +207,7 @@ DrawInstructions()
 	
 	ChipmunkDemoTextDrawString(cpv(-300, 200),
 		"Controls:\n"
+		"F1 DrawInfo on/off\n"
 		"A - Z Switch demos. (return restarts)\n"
 		"Use the mouse to grab objects.\n"
 	);
@@ -362,8 +364,10 @@ Display(void)
 	
 	// // Now render all the UI text.
 	DrawInstructions();
-	DrawInfo();
-	
+	if (drawInfo)
+	{
+		DrawInfo();
+	}
 	ChipmunkDemoTextMatrix = projection_matrix;
 	ChipmunkDemoTextFlushRenderer();
 	
@@ -436,7 +440,9 @@ Keyboard(const sapp_event *event)
 				view_translate.y = 0.0f;
 				view_scale = 1.0f;
 			} break;
-			
+			case SAPP_KEYCODE_F1: {
+				drawInfo = !drawInfo;
+			} break;
 			default: break;
 		}
 	}

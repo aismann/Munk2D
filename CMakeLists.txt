@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(chipmunk)
+project(Munk2D)
 
 # to change the prefix, run cmake with the parameter:
 #   -D CMAKE_INSTALL_PREFIX=/my/prefix
