@@ -1,5 +1,17 @@
 # Changelog
 
+## Unreleased
+
+Changes:
+
+- BUG: Fix stack overflow in cpBBTree when adding many shapes to a space.
+  Converted recursive tree traversal functions to iterative implementations.
+- TEST: Add a first portable CMake/CTest-based C test executable.
+- CI: Run the portable C test suite in the GitHub Actions build matrix.
+- DOC: Document how to build and run the portable test suite with CMake/CTest.
+- DOC: Add Munk2D logo and icon branding assets, and use the logo/favicon in the
+  README and generated docs.
+
 ## 2.0.1
 
 This is the third release of Munk2D, the friendly Chipmunk2D fork!
