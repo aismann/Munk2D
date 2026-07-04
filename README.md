@@ -123,8 +123,8 @@ undocumented/private APIs of Munk2D.
 The best way to get support for Munk2D is on its GitHub, open an Issue at 
 https://github.com/viblo/Munk2D/issues
 
-Since Munk2D share a lot, the same support channels that Chipmunk2D uses can 
-be useful, for questions not specific to special features or bugs in Munk2D:
+Since Munk2D shares a lot with Chipmunk2D, the same documentation and support 
+channels that Chipmunk2D uses can be useful for questions not specific to Munk2D:
 
 There is a forum for Chipmunk2D at http://chipmunk2d.net/forum/ Unfortunately
 its very inactive nowadays, but much of the discussions are still relevant.
