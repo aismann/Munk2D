@@ -2,7 +2,7 @@
 
 ## 2.1.0
 
-Released 2026-09-26.
+Released 2026-10-11.
 
 This release adds an opt-in AVX2 contact solver, a broad set of
 result-preserving performance optimizations, the MunkBench benchmark suite, a
